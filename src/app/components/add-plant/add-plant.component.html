@@ -1,0 +1,14 @@
+  <form *ngIf="showAddPlant"  (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="text">Name </label>
+    <input
+      type="text"
+      name="text"
+      [(ngModel)]="name"
+      id="text"
+      placeholder="plant name"
+    />
+  </div>
+  <input type="submit" value="Save Plant" class="btn btn-block" />
+  </form>
+
